@@ -1,0 +1,88 @@
+.title
+{
+text-align: center;
+}
+#settings
+{
+text-align: center;
+}
+#board
+{
+text-align: center;
+}
+.row
+{
+height: 30px;
+}
+.row > button
+{
+width: 30px;
+height: 30px;
+}
+.centered
+{
+text-align: center;
+margin: 1rem;
+}
+.gameInfo
+{
+text-align:center;
+background-color: burlywood;
+}
+.hidden/* use this for the text in the squares*/
+{
+display: flex;
+justify-content: center;
+align-items: center; 
+margin: 0;
+opacity: 0;
+} 
+.hide/* do not use this for the text in the squares*/
+{
+visibility: hidden;
+}
+.error
+{
+text-align: center;
+color: red;
+}
+.text
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0; 
+}
+.winBackGrd
+{
+text-align:center;
+background-color:blue;
+margin-top: 1rem;
+margin-left: 2rem;
+margin-right: 2rem;
+}
+.loseBackGrd
+{
+text-align: center;
+background-color: red;
+}
+.win
+{
+color:white;
+}
+.lose
+{
+color:black;
+}
+.Blue
+{
+background-color: blue;
+}
+.Green
+{
+background-color: aquamarine;
+}
+.Red
+{
+background-color: red;
+}

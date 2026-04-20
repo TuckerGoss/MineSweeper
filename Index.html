@@ -1,0 +1,40 @@
+<head>
+<Title>MineSweeper</Title>
+<link rel ="stylesheet" href = "Style.css">
+</head>
+<body>
+    <h1 class ="title">MineSweeper</h1>
+    <div class = "centered">
+        <select id = "difficulty" name ="difficulty">
+            <option value = "" disabled ="True" selected = "True">Difficulty</option>
+            <option value ="easy">Easy</option>
+            <option value ="medium">Medium</option>
+            <option value ="hard">Hard</option>
+            <option value ="custom">Custom</option>
+        </select>
+    </div>
+    <div id = "settings", class = "hide">
+        <label for ="RowCount">Rows</label>
+        <input type ="number" id = "RowCount" name ="RowCount"></input>
+        <label for ="ColumnCount">Columns</label>
+        <input type ="number" id = "ColumnCount" name ="ColumnCount"></input>
+        <label for = "MineCount">Mines</label>
+        <input type = "number" id ="MineCount" name ="MineCount"></input>
+    </div>
+    <div class = "centered">
+        <button id="submit" onclick ="createBoard(RowCount.value,ColumnCount.value,MineCount.value)">Start</button>
+        <button id="Solve" onclick = "autoSolve()" >Solve</button>
+    </div>
+    <div class = "hide" id = "gameInfo">
+        <h2 id = "timer" class = "timer"></h2>
+        <h2 id = "remaining" class ="remaining"></h2>
+    </div>
+    <div id = "board">
+    
+    </div>
+    <div id = "MessageBackground" class = "hide">
+        <h2 id = "EndMessage" class ="win">You Win :)</h2>
+    </div>
+    
+    <p id = "error" class = "hide">Too many Mines</p>
+    <script src="Script.js"></script> 
